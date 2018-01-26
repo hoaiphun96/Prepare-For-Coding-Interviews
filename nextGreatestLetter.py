@@ -49,3 +49,12 @@ class Solution:
             if letter > target:
                 return letter
         return letters[0]
+
+    def nextGreatestLetter2(self, letters, target):
+        """
+        :type letters: List[str]
+        :type target: str
+        :rtype: str
+        """
+        pos = bisect.bisect_right(letters, target)
+        return letters[0] if pos == len(letters) else letters[pos]
