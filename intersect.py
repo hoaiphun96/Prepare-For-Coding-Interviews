@@ -23,3 +23,25 @@ class Solution:
                 t = c1[elem] if c1[elem] <= c2[elem] else c2[elem]
                 ret += [elem] * t
         return ret
+
+"""
+O(n+m) time, cleaner version
+"""
+    def intersect2(self, nums1, nums2):
+        ret = dict()
+        if len(nums1) <= len(nums2):
+            smallnums, bignums = nums1, nums2
+        else:
+            smallnums, bignums = nums2, nums1
+        for n in smallnums:
+            if n not in ret:
+                ret[n] = 1
+            else:
+                ret[n] += 1
+        retList = []
+        for n in bignums:
+            if n in ret and ret[n] > 0:
+                ret[n] -= 1
+                retList.append(n)
+
+        return retList
