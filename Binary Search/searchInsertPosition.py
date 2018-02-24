@@ -39,7 +39,4 @@ class Solution:
                 right = middle - 1
         if right < 0:
             return 0
-        if left == len(nums):
-            return len(nums)
-        if left > right:
-            return left
+        return left
