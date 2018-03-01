@@ -21,16 +21,12 @@ class TreeNode:
         tovisit = [self]
         visited = []
         while tovisit:
-            node = tovisit[-1]
+            node = tovisit.pop()
             print(node.val)
             if node.left and node.left.val not in visited:
                 tovisit.append(node.left)
             elif node.right and node.right.val not in visited:
-                tovisit.pop()
                 tovisit.append(node.right)
-            else:
-                tovisit.pop()
-            if node.val not in visited:
-                visited.append(node.val)
+            visited.append(node.val)
 
         return visited
