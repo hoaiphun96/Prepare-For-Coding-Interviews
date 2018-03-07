@@ -36,3 +36,16 @@ def helper(board, ret, path_so_far, current_pos, target):
     if current_pos[0] < len(board) - 1:
         helper(board, ret, path_so_far + current_letter, (current_pos[0] + 1, current_pos[1]), target)
 
+"""
+Runtime Complexity 
+O(bd)
+b = Branching Factor = 2 (down and right)
+
+d = depth = m + n where m and n are the number of rows and columns in the matrix
+
+Space Complexity 
+O(bxd)
+b = Branching Factor = 2 (down and right)
+
+d = depth = m + n where m and n are the number of rows and columns in the matrix
+"""
