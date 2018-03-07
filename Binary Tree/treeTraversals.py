@@ -19,7 +19,8 @@ class TreeNode:
             if node.right and node.right.val not in visited:
                 tovisit.append(node.right)
 
-            visited.add(node)
+            visit
+            ed.add(node)
 
     #Recursive DFS
     def dfs(self):
@@ -52,18 +53,6 @@ class TreeNode:
                 stack.append(node.right)
                 stack.append(node.left)
 
-    #Iterative Postorder
-    def postOrder(self):
-        if not self:
-            return
-        stack = [self]
-
-        while stack:
-            node = stack.pop()
-            if node:
-                stack.append(node.right)
-                stack.append(node.left)
-                print(node.val)
 
     #Iterative Inorder
     def inOrder(self):
