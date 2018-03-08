@@ -86,7 +86,7 @@ class TreeNode:
     def preOrderR(self):
         if self:
             print(self.val)
-            if self.left:
+            if self.left:s
                 self.left.preOrderR()
             if self.right:
                 self.right.preOrderR()
