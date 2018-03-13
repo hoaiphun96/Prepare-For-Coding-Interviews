@@ -1,6 +1,8 @@
 """
-Given a Singly Linked-List, implement a method to check if the list has cycles. The Space complexity should be O(1).
-If there is a cycle, return true. Otherwise, return false. Empty lists should be considered non-cyclic.
+Given a Singly Linked-List, implement a method to check if the list has cycles.
+The Space complexity should be O(1).
+If there is a cycle, return true. Otherwise, return false.
+Empty lists should be considered non-cyclic.
 Be sure to click Use Me to check Node's structure.
 
 Examples:
