@@ -1,4 +1,4 @@
-# Leet-Code-Problems
+# Prepare For Coding Interviews
 Set of coding problems from Leetcode, Firecode, Lintcode I do to prepare for Software Engineer coding interviews
 
 ## Resources
