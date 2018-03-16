@@ -116,7 +116,3 @@ t1 = TreeNode(1)
 t1.left = t2
 t1.right = t3
 
-# t1.dfs()
-# t1.inOrder()
-# t1.postOrderR()
-# t1.inOrder()
