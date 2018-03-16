@@ -19,8 +19,7 @@ class TreeNode:
             if node.right and node.right.val not in visited:
                 tovisit.append(node.right)
 
-            visit
-            ed.add(node)
+            visited.add(node)
 
     #Recursive DFS
     def dfs(self):
