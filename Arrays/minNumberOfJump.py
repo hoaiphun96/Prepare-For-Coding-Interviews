@@ -21,3 +21,20 @@ def min_jumps(arr):
         current_i = next_optimal_i
         counter += 1
     return counter
+
+#approach 2
+def min_jumps(arr):
+    i=0
+    count=0
+    end =0
+    minDist=0
+    while minDist >= i and i < len(arr):
+        if end < i:
+            count += 1
+            end = minDist
+        minDist = max(minDist,arr[i]+i)
+        i += 1
+    if minDist < len(arr)-1:
+        return 0
+    else:
+        return count
