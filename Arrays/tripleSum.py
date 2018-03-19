@@ -14,6 +14,8 @@ def triple_sum(integer_list, target_number):
     ret = set()
     length = len(integer_list)
     for i in range(length - 2):
+        if i > 0 and integer_list[i] == integer_list[i-1]:
+            continue
         for j in range(i + 1, length - 1):
             sum_ij = integer_list[i] + integer_list[j]
             # do binary search for number target_number - sum_ij
@@ -39,6 +41,8 @@ def triple_sum(integer_list, target_number):
     a_set = set()
     output = []
     for i in range(0,len(integer_list)):
+        if i > 0 and integer_list[i] == integer_list[i-1]:
+            continue
         j = i + 1
         k = len(integer_list) - 1
         while(j < k):
